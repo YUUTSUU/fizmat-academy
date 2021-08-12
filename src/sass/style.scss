@@ -1,0 +1,26 @@
+@import "lips/bootstrap-reboot.min.scss";
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+}
+
+@import "blocks/btn.scss";
+@import "blocks/menu.scss";
+@import "blocks/promo.scss";
+@import "blocks/courses.scss";
+@import "blocks/advantages.scss";
+@import "blocks/education.scss";
+@import "blocks/consultation.scss";
+@import "blocks/teacher.scss";
+@import "blocks/news.scss";
+@import "blocks/contact.scss";
+@import "blocks/title.scss";
+@import "base/media.scss";

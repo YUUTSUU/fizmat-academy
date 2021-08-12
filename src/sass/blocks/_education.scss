@@ -1,0 +1,119 @@
+.education {
+  padding: 75px 0 130px 0;
+
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    line-height: 60px;
+    color: #333333;
+    margin-bottom: 21px;
+  }
+
+  &__subheader {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #777777;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 366px;
+
+    margin: 0 auto;
+
+  }
+
+  &__btn {
+    padding: 14px 54px;
+
+    &_md {
+      background: #FFFFFF;
+      box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      background-image: linear-gradient(140.06deg, rgba(8, 99, 184, 1), rgba(130, 34, 188, 1));
+    }
+  }
+
+
+  &__tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 60px;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1400px;
+      height: 3px;
+      left: -90px;
+      top: 13px;
+      background: #E1D8FF;
+      z-index: -1;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &:hover {
+      img {
+        transition: all .3s;
+        opacity: 0;
+      }
+
+      transition: all .3s;
+      transform: scale(1.5, 1.5);
+      background: url(../img/vector-3.svg) center/100% no-repeat;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 96px;
+  }
+
+  &__img {
+    width: 500px;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &__description {
+    width: 536px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 24px;
+    color: #333333;
+    margin-top: 50px;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    margin: 32px 0;
+  }
+}

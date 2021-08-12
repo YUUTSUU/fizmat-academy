@@ -1,0 +1,93 @@
+.hamburger {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 20px;
+  cursor: pointer;
+  top: 20px;
+  right: 30px;
+
+  div {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: black;
+  }
+
+  &:hover div {
+    background:rgb(129, 179, 253)
+  }
+}
+
+.promo {
+  &__wrapper {
+    position: relative;
+    padding: 65px 0 169px 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 654px;
+      height: 570.44px;
+      left: 600px;
+      top: 65px;
+      z-index: -1;
+      background: url(../img/bg-promo.svg) center/100% no-repeat;
+    }
+  }
+
+  &__formula-1 {
+    margin-top: 40px;
+    margin-left: 32px;
+    text-transform: uppercase;
+  }
+
+  &__formula-2 {
+    margin-top: 18px;
+    margin-left: 113px;
+    text-transform: uppercase;
+  }
+
+  &__header {
+    margin-top: 33px;
+    width: 427px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 115px;
+    line-height: 75px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(140.06deg, rgba(8, 99, 184, 1), rgba(130, 34, 188, 1));
+
+    span {
+      font-size: 68px;
+    }
+  }
+
+  &__subheader {
+    margin-top: 23.8px;
+  }
+
+  &__btn {
+    margin-top: 34.67px;
+    padding: 13px 54px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35);
+    border-radius: 60px;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(140.06deg, rgba(8, 99, 184, 1), rgba(130, 34, 188, 1));
+  }
+}

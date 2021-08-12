@@ -1,0 +1,148 @@
+.advantages {
+  padding: 39px 0 52px 0;
+  background-color: #3965BB;
+  position: relative;
+  z-index: 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 759px;
+    height: 147px;
+    top: 0;
+    right: 0;
+    background: url(../img/line.svg) no-repeat;
+    z-index: 2;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 756px;
+    height: 74px;
+    bottom: 0;
+    left: 0;
+    background: url(../img/line-2.svg) no-repeat;
+    z-index: 2;
+  }
+
+  &__formula {
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8FB0F1;
+
+    &_first {
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 30px;
+    }
+
+    &_second {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 930px;
+    }
+
+    &_last {
+      font-size: 18px;
+      line-height: 22px;
+      margin-left: 650px;
+      margin-top: 52px;
+    }
+  }
+
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-top: 15px;
+  }
+
+  &__divider {
+    width: 108.61px;
+    height: 5px;
+    background: #FFFFFF;
+    margin-top: 27px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 380px);
+    grid-template-rows: repeat(2, 130px);
+    grid-gap: 40px;
+    margin-top: 44px;
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__img {
+    display: flex;
+    position: relative;
+    width: 150px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 68px;
+      height: 80px;
+      top: 0;
+      left: 0;
+      background: url(../img/vector.svg) no-repeat;
+      z-index: 1;
+    }
+
+    img {
+      width: 100%;
+      z-index: 2;
+      position: absolute;
+      top: 8px;
+      left: 3px;
+    }
+  }
+
+  &__item {
+    margin-left: 32px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+  }
+
+  &__descr {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #C1D8FB;
+    margin-top: 14px;
+  }
+
+  &__inner {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      right: -100px;
+      background: url(../icons/formul.svg) no-repeat;
+      z-index: 3;
+    }
+  }
+}

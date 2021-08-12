@@ -1,0 +1,122 @@
+.consultation {
+  background: #3965BB;
+  box-shadow: inset 0px 0px 20px #6559C7;
+  padding: 120px 0 83px 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 759px;
+    height: 147px;
+    top: -75px;
+    left: 0;
+    background: url(../img/line-2.svg) no-repeat;
+    z-index: 2;
+    transform: rotateX(180deg)
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 756px;
+    height: 74px;
+    bottom: 0;
+    right: 0;
+    background: url(../img/line-2.svg) no-repeat;
+    z-index: 2;
+    transform: rotateY(180deg)
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 40px;
+    color: #FFFFFF;
+  }
+
+  &__subheader {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #FFFFFF;
+    margin-top: 16px;
+  }
+
+  &__form {
+    margin-top: 48px;
+    display: flex;
+  }
+
+  &__input {
+    position: relative;
+    margin-right: 40px;
+
+    input {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      color: #FFFFFF;
+
+      &::-webkit-input-placeholder {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #FFFFFF;
+      }
+    }
+
+    label {
+      position: absolute;
+      width: 200px;
+      height: 2px;
+      left: 0;
+      top: 30px;
+      background: #FFFFFF;
+    }
+  }
+
+  &__btn {
+    color: blue;
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    // background-image: linear-gradient(140.06deg, rgba(8, 99, 184, 1), rgba(130, 34, 188, 1));
+    background: #FFFFFF;
+  }
+
+  &__formula {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8FB0F1;
+
+    &_first {
+      margin-top: -20px;
+    }
+
+    &_second {
+      margin: 20px 0 0 40px;
+    }
+  }
+
+  &__block-second {
+    position: relative;
+    width: 500px;
+
+    img {
+      position: absolute;
+      right: -20px;
+    }
+  }
+}

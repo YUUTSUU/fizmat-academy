@@ -49,32 +49,32 @@
 
   &__tabs {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     margin-top: 60px;
     position: relative;
 
-    &::after {
+    &::before {
       content: "";
       position: absolute;
-      width: 1400px;
+      width: 110%;
       height: 3px;
-      left: -90px;
+      left: -5%;
       top: 13px;
       background: #E1D8FF;
-      z-index: -1;
+      z-index: 0;
     }
   }
 
   &__item {
     cursor: pointer;
+    z-index: 1;
 
     &:hover {
       img {
-        transition: all .3s;
         opacity: 0;
       }
-
+      
       transition: all .3s;
       transform: scale(1.5, 1.5);
       background: url(../img/vector-3.svg) center/100% no-repeat;
@@ -82,21 +82,22 @@
   }
 
   &__wrapper {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     margin-top: 96px;
+    grid-gap: 75px;
   }
 
   &__img {
-    width: 500px;
+    width: 100%;
 
-    svg {
+    img {
       width: 100%;
     }
   }
 
   &__description {
-    width: 536px;
+    width: 100%;
   }
 
   &__text {
